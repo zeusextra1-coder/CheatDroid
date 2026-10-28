@@ -2,6 +2,10 @@ plugins { id 'com.android.application' }
 android {
     namespace 'com.cheatdroid'
     compileSdk 34
-    defaultConfig { applicationId 'com.cheatdroid'; minSdk 21; targetSdk 34; versionCode 1; versionName '1.0' }
+    defaultConfig { applicationId 'com.cheatdroid'; minSdk 24; targetSdk 34; versionCode 1; versionName '1.0' }
     compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}
+dependencies {
+    implementation 'dev.rikka.shizuku:api:13.1.5'
+    implementation 'dev.rikka.shizuku:provider:13.1.5'
 }
